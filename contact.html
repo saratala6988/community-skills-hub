@@ -1,33 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact - Community Skills Hub</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Community Skills Hub</title>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9ff;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 55px 20px;
+}
+
+header h1 {
+  font-size: 38px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+/* NAV */
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: rgba(255,255,255,0.2);
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: white;
+  color: #6a11cb;
+}
+
+/* MAIN */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* LEFT INFO */
+.info {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.info h2 {
+  color: #6a11cb;
+}
+
+.info p {
+  line-height: 1.6;
+}
+
+.contact-item {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* FORM */
+.form-box {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.form-box h2 {
+  color: #6a11cb;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+textarea {
+  height: 120px;
+}
+
+button {
+  margin-top: 15px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* FOOTER */
+footer {
+  background: #1e3c72;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+</style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Contact</h1>
-        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" 
-alt="Contact and communication" width="300">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="courses.html">Courses</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+<header>
+  <h1>Contact Us</h1>
+  <p>We are here to help you start your learning journey</p>
 
-    <main>
-        <h2>Contact Us</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-        <p>Email: info@communityskills.com</p>
-        <p>Phone: 0123456789</p>
+<div class="container">
 
-        <p>You can contact us for more information about courses.</p>
+  <!-- LEFT SIDE -->
+  <div class="info">
+    <h2>Get in Touch</h2>
+    <p>
+      If you have any questions about our courses or need help choosing the right course,
+      feel free to contact us. We are happy to support you.
+    </p>
 
-    </main>
+    <div class="contact-item">📧 Email: info@communityskills.com</div>
+    <div class="contact-item">📞 Phone: 0123456789</div>
+    <div class="contact-item">📍 Location: Newcastle, UK</div>
+  </div>
+
+  <!-- FORM -->
+  <div class="form-box">
+    <h2>Send a Message</h2>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</div>
+
+<footer>
+  <h3>Community Skills Hub</h3>
+  <p>Helping you learn digital skills </p>
+</footer>
 
 </body>
 </html>
