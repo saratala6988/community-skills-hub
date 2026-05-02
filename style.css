@@ -387,3 +387,30 @@ header img {
     font-size: 15px !important;
   }
 }
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+body {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.btn {
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff4b7d, #6a11cb);
+}
+.card, .welcome, .intro, .form-box, .info {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+body {
+  font-family: 'Poppins', sans-serif;
+}
