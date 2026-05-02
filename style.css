@@ -414,3 +414,12 @@ body {
 body {
   font-family: 'Poppins', sans-serif;
 }
+.course-graphic {
+  height: 180px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
