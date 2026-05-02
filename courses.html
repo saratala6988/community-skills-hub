@@ -12,24 +12,22 @@ body {
   background: #f5f6fa;
 }
 
-/* HEADER */
+/* HEADER (مثل About) */
 header {
-  background: #1e3a8a;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: white;
   text-align: center;
   padding: 50px 20px;
 }
 
 header h1 {
-  font-size: 40px;
+  font-size: 38px;
 }
 
 header p {
   font-size: 18px;
-  opacity: 0.9;
 }
 
-/* NAV */
 nav {
   margin-top: 20px;
 }
@@ -45,28 +43,30 @@ nav a {
 
 nav a:hover {
   background: white;
-  color: #1e3a8a;
+  color: #6a11cb;
 }
 
-/* INTRO */
+/* INTRO BOX */
 .intro {
   max-width: 900px;
   margin: 40px auto;
   background: white;
   padding: 30px;
-  border-radius: 12px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* SECTION */
+.section {
+  max-width: 1100px;
+  margin: 40px auto;
   text-align: center;
 }
 
-/* COURSES */
-.courses {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.courses h2 {
-  font-size: 30px;
-  color: #1e3a8a;
+.section h2 {
+  color: #6a11cb;
+  font-size: 28px;
 }
 
 /* CARDS */
@@ -79,12 +79,11 @@ nav a:hover {
 }
 
 .card {
-  width: 280px;
+  width: 300px;
   background: white;
-  border-radius: 12px;
-  padding: 20px;
-  text-align: left;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
   transition: 0.3s;
 }
 
@@ -92,13 +91,24 @@ nav a:hover {
   transform: translateY(-5px);
 }
 
+.card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
 .card h3 {
   color: #2563eb;
 }
 
 .card ul {
-  font-size: 14px;
   padding-left: 18px;
+  font-size: 14px;
 }
 
 /* BUTTON */
@@ -145,42 +155,48 @@ footer {
   </p>
 </section>
 
-<section class="courses">
+<section class="section">
   <h2>Our Popular Courses</h2>
 
   <div class="cards">
 
     <div class="card">
-      <h3>Computer Basics</h3>
-      <p>Learn how to use a computer confidently.</p>
-      <ul>
-        <li>Keyboard and mouse</li>
-        <li>Files and folders</li>
-        <li>Microsoft Word</li>
-      </ul>
-      <a href="contact.html" class="btn">Join</a>
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="">
+      <div class="card-content">
+        <h3>Computer Basics</h3>
+        <ul>
+          <li>Keyboard and mouse</li>
+          <li>Files and folders</li>
+          <li>Microsoft Word</li>
+        </ul>
+        <a href="contact.html" class="btn">Join</a>
+      </div>
     </div>
 
     <div class="card">
-      <h3>Internet & Safety</h3>
-      <p>Learn how to stay safe online.</p>
-      <ul>
-        <li>Passwords</li>
-        <li>Online safety</li>
-        <li>Secure browsing</li>
-      </ul>
-      <a href="contact.html" class="btn">Join</a>
+      <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b" alt="">
+      <div class="card-content">
+        <h3>Internet & Safety</h3>
+        <ul>
+          <li>Passwords</li>
+          <li>Online safety</li>
+          <li>Secure browsing</li>
+        </ul>
+        <a href="contact.html" class="btn">Join</a>
+      </div>
     </div>
 
     <div class="card">
-      <h3>Digital Skills for Work</h3>
-      <p>Improve your skills for jobs and career.</p>
-      <ul>
-        <li>CV writing</li>
-        <li>Email skills</li>
-        <li>Job search</li>
-      </ul>
-      <a href="contact.html" class="btn">Join</a>
+      <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="">
+      <div class="card-content">
+        <h3>Digital Skills for Work</h3>
+        <ul>
+          <li>CV writing</li>
+          <li>Email skills</li>
+          <li>Job search</li>
+        </ul>
+        <a href="contact.html" class="btn">Join</a>
+      </div>
     </div>
 
   </div>
